@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    margin: 0 !important;
+    border-top: 7px solid #333 !important;
+}
+
+/* Estilos para el header y el navbar */
+
+header {
+    z-index: 90000;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 110px;
+
+    background: linear-gradient(#000, #00000000);
+}
+
+header nav {
+    margin: 0 auto;
+
+    align-self: center;
+
+    height: 100%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 100%;
+}
+
+header .logo img {
+    height: 95%;
+}
+
+header ul {
+
+    height: 100%;
+    margin: 0;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-content: center;
+
+    font-size: 25px;
+}
+
+header li {
+    width: 130px;
+    height: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-self: center;
+}
+
+header li a {
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+}
+
+header li:hover {
+    background-color: #FFF;
+}
+
+header li:hover > a {
+    color: #333;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+/* Fin de los estilos del header */
+
+
+/* Colocación y estilización de las imágenes del slider */
+
+.slider-wrap {
+    position: relative;
+}
+
+.slider-wrap, #slider{
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide.slide1 {
+    background-image: url(../img/showcase1.jpg);
+}
+.slide.slide2 {
+    background-image: url(../img/showcase2.jpg);
+}
+.slide.slide3 {
+    background-image: url(../img/showcase3.jpg);
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #DDD transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #DDD;
+    right: 0;
+    margin-right: 30px;
+}
+
+/* Fin de los estilos del slider */
+
+
+/* Seteo del tamaño de cada section, al 100% del ancho
+    y el 100% de la altura del viewport
+*/
+section {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: 130px;
+}
+
+
+/* Estilos de la sección de productos */
+
+#productos {
+    background-color: #FFF6DD;  
+}
+
+#productos h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#productos .fila {
+    margin-top: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-content: center;
+}
+
+#productos .fila .columna {
+    width: 40%;
+    margin-bottom: 50px; 
+    background-color: #e8dfc4;
+}
+
+.prod {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-content: center;
+}
+
+.prod p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+#productos .prod img {
+    margin: auto;
+    max-width: 90%;
+    height: 250px;
+}
+
+#productos a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#productos a:hover {
+    text-decoration: none;
+}
+
+/* Fin de la sección de productos */
+
+/* Estilos para la sección con la receta de la semana */
+#recetas .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-content: center;
+}
+
+#recetas .content h2 {
+    width: 100%;
+    font-family: Arial;
+    font-size: 85px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#recetas .content img {
+    width: 80%;
+    margin: 0 auto 50px auto;
+}
+
+#recetas .content a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#recetas .content a:hover {
+    text-decoration: none;
+}
+
+/* Fin de la sección de recetas */
+
+/* Estilos para la sección de about us */
+
+#info {
+    background-color: #EEE;
+}
+
+#info h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+}
+
+#info p {
+    width: 90%;
+    margin: 100px auto 0 auto;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Fin de la sección de about us */
+
+/* Estilos para la sección de contacto y ubicación */
+
+section#ubicacion {
+    padding: 100px 20px 100px 20px;
+    min-height: 100% !important;
+}
+
+#ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#ubicacion .content {
+    width: 95%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-content: center;
+}
+
+#ubicacion .content img {
+    width: 65%;
+}
+
+#ubicacion .contact {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#ubicacion .contact h2 {
+    font-size: 45px;
+}
+
+#ubicacion .contact li {
+    font-size: 30px;
+}
+
+#ubicacion .contact span {
+    font-size: 40px;
+}
+
+/* Fin de la sección de contacto */
+
+/* Estilos para el footer */
+
+footer {
+    background-color: #414141;
+}
+
+footer .social-icons {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 50px;
+}
+
+footer .social-icons span:hover {
+    cursor: pointer;
+}
+
+footer p {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+}
