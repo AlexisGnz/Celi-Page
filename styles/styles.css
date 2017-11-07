@@ -43,7 +43,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 95%;
+    height: 200%;
 }
 
 header ul {
@@ -155,7 +155,7 @@ section {
     width: 100%;
     min-height: 100vh;
 
-    padding-top: 130px;
+    padding-top: 40px;
 }
 
 
@@ -276,7 +276,7 @@ section {
 
 #info p {
     width: 90%;
-    margin: 100px auto 0 auto;
+    margin: 25px auto 0 auto;
     font-size: 22px;
     text-align: center;
 }
